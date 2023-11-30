@@ -1,0 +1,34 @@
+# Django
+__pycache__/
+*.log
+*.pot
+*.pyc
+*.sqlite3
+media
+
+# Postgres
+data/
+
+# Python
+*.py[cod]
+*$py.class
+
+# Tests
+htmlcov/
+.tox/
+.coverage
+.cache
+.pytest_cache/
+coverage.xml
+test-reports/
+
+# Virtual Environment
+env/
+
+# IDE
+.idea/
+.ycm_extra_conf.py
+
+# Built docker images
+*.tar
+*.tar.gz

@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from core.views import redirect_to_docs
+from .api import api
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("", redirect_to_docs),
+    path("admin/", admin.site.urls),
+    path("api/", api.urls),
 ]

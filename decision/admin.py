@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ExpertRequest, RequestData, Decision
+
+admin.site.register(Decision)
+admin.site.register(ExpertRequest)
+admin.site.register(RequestData)

@@ -128,20 +128,30 @@ def all_trees(request):
 
 
 # === /latest === get current tree ===========================================
-TreeLeafOut = create_schema(
-    TreeLeaf,
-    name="TreeLeafOut",
-    exclude=["tree_version"],
-)
-
+TreeLeafOut = create_schema(TreeLeaf, name="TreeLeafOut", exclude=["tree_version"])
 TreeNodeOut = create_schema(
     TreeNode,
     name="TreeNodeOut",
-    exclude=["tree_version", "true_successor", "false_successor"],
+    exclude=[
+        "tree_version",
+        "true_successor",
+        "true_type",
+        "false_successor",
+        "false_type",
+    ],
+    custom_fields=[("data_type_id", int, "data_type_id")],
 )
 
 
 class TreeOut(Schema):
+    """
+    there is a bug with django-ninja for ForeignKey relations, see here:
+    https://github.com/vitalik/django-ninja/issues/927 or here:
+    https://github.com/vitalik/django-ninja/issues/517
+    this is why we add data_type_id in custom_fields explicitely, then django ninja
+    adds both (e.g. data_type_id and data_type) with the same value
+    """
+
     id: int
     created_by: str
     root: int
@@ -242,6 +252,7 @@ TreeNodeExplanation = create_schema(
         "false_id",
         "false_successor",
     ],
+    custom_fields=[("data_type_id", int, None)],
 )
 
 
@@ -452,7 +463,6 @@ def new_tree(request, payload: NewTree, kind_id: int = Path(...)):
     or nodes, more than one tree, ...), this endpoint will give you back an error
     stating the problem.
     """
-    print(TreeKind.objects.first())
     tree_kind = TreeKind.objects.get(id=int(kind_id))
     version = Version.objects.create_next_version(
         kind_of_tree=tree_kind, isMajor=payload.new_major_version

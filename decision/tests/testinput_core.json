@@ -1,0 +1,56 @@
+[
+  {
+    "name": "ABC",
+    "display_name": "ABC Data Type",
+    "kind_of_data": "INT",
+    "explanation": ""
+  },
+  {
+    "name": "DEF",
+    "display_name": "DEF Data Type",
+    "kind_of_data": "BOOL",
+    "explanation": ""
+  },
+  {
+    "name": "GHI",
+    "display_name": "GHI Data Type",
+    "kind_of_data": "STR",
+    "explanation": ""
+  },
+  {
+    "name": "JKL",
+    "display_name": "JKL Data Type",
+    "kind_of_data": "INT",
+    "explanation": ""
+  },
+  {
+    "name": "MNO",
+    "display_name": "MNO Data Type",
+    "kind_of_data": "INT",
+    "explanation": ""
+  },
+  {
+    "name": "PQR",
+    "display_name": "PQR Data Type",
+    "kind_of_data": "BOOL",
+    "explanation": ""
+  },
+  {
+    "name": "STU",
+    "display_name": "STU Data Type",
+    "kind_of_data": "INT",
+    "explanation": ""
+  },
+  {
+    "name": "VWX",
+    "display_name": "VWX Data Type",
+    "kind_of_data": "BOOL",
+    "explanation": ""
+  },
+  {
+    "name": "YZ",
+    "display_name": "YZ Data Type",
+    "kind_of_data": "INT",
+    "explanation": ""
+  }
+]

@@ -1,0 +1,459 @@
+{
+  "created_by": "testing",
+  "new_major_version": true,
+  "root": 1,
+  "nodes": [
+    {
+      "number": 1,
+      "display_name": "ABC > 700.000",
+      "description": "",
+      "data_type_id": "ABC",
+      "data_value": 700000,
+      "comparison": "GT",
+      "list_comparison": "ALL",
+      "true_number": 20,
+      "false_number": 2
+    },
+    {
+      "number": 17,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 38,
+      "false_number": 37
+    },
+    {
+      "number": 19,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 36,
+      "false_number": 35
+    },
+    {
+      "number": 18,
+      "display_name": "GHI",
+      "description": "",
+      "data_type_id": "GHI",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 19,
+      "false_number": 34
+    },
+    {
+      "number": 13,
+      "display_name": "ABC < 100.000",
+      "description": "",
+      "data_type_id": "ABC",
+      "data_value": 100000,
+      "comparison": "ST",
+      "list_comparison": "ALL",
+      "true_number": 17,
+      "false_number": 18
+    },
+    {
+      "number": 14,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 30,
+      "false_number": 29
+    },
+    {
+      "number": 16,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 33,
+      "false_number": 32
+    },
+    {
+      "number": 15,
+      "display_name": "GHI",
+      "description": "",
+      "data_type_id": "GHI",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 16,
+      "false_number": 31
+    },
+    {
+      "number": 12,
+      "display_name": "ABC < 50.000",
+      "description": "",
+      "data_type_id": "ABC",
+      "data_value": 50000,
+      "comparison": "ST",
+      "list_comparison": "ALL",
+      "true_number": 14,
+      "false_number": 15
+    },
+    {
+      "number": 11,
+      "display_name": "YZ < 200.000",
+      "description": "",
+      "data_type_id": "YZ",
+      "data_value": 200000,
+      "comparison": "ST",
+      "list_comparison": "ALL",
+      "true_number": 13,
+      "false_number": 12
+    },
+    {
+      "number": 6,
+      "display_name": "YZ < 250.000",
+      "description": "",
+      "data_type_id": "YZ",
+      "data_value": 250000,
+      "list_comparison": "ALL",
+      "comparison": "GT",
+      "true_number": 28,
+      "false_number": 11
+    },
+    {
+      "number": 47,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 60,
+      "false_number": 59
+    },
+    {
+      "number": 49,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 58,
+      "false_number": 57
+    },
+    {
+      "number": 48,
+      "display_name": "GHI",
+      "description": "",
+      "data_type_id": "GHI",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 49,
+      "false_number": 56
+    },
+    {
+      "number": 43,
+      "display_name": "ABC < 100.000",
+      "description": "",
+      "data_type_id": "ABC",
+      "data_value": 100000,
+      "comparison": "ST",
+      "true_number": 47,
+      "false_number": 48
+    },
+    {
+      "number": 44,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 52,
+      "false_number": 51
+    },
+    {
+      "number": 46,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 55,
+      "false_number": 54
+    },
+    {
+      "number": 45,
+      "display_name": "GHI",
+      "description": "",
+      "data_type_id": "GHI",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 46,
+      "false_number": 53
+    },
+    {
+      "number": 42,
+      "display_name": "ABC < 50.000",
+      "description": "",
+      "data_type_id": "ABC",
+      "data_value": 50000,
+      "comparison": "ST",
+      "list_comparison": "ALL",
+      "true_number": 44,
+      "false_number": 45
+    },
+    {
+      "number": 41,
+      "display_name": "ABC < 200.000",
+      "description": "",
+      "data_type_id": "YZ",
+      "data_value": 200000,
+      "comparison": "ST",
+      "list_comparison": "ALL",
+      "true_number": 43,
+      "false_number": 42
+    },
+    {
+      "number": 40,
+      "display_name": "ABC > 250.000",
+      "description": "",
+      "data_type_id": "YZ",
+      "data_value": 250000,
+      "comparison": "GT",
+      "list_comparison": "ALL",
+      "true_number": 50,
+      "false_number": 41
+    },
+    {
+      "number": 9,
+      "display_name": "GHI",
+      "description": "",
+      "data_type_id": "GHI",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 10,
+      "false_number": 26
+    },
+    {
+      "number": 10,
+      "display_name": "JKL vor Ergebnis",
+      "description": "",
+      "data_type_id": "JKL",
+      "data_value": 0,
+      "comparison": "EQ",
+      "true_number": 40,
+      "false_number": 27
+    },
+    {
+      "number": 8,
+      "display_name": "ABC < 100.000",
+      "description": "",
+      "data_type_id": "ABC",
+      "data_value": 100000,
+      "comparison": "ST",
+      "list_comparison": "ALL",
+      "true_number": 9,
+      "false_number": 25
+    },
+    {
+      "number": 7,
+      "display_name": "STU < 90",
+      "description": "",
+      "data_type_id": "STU",
+      "data_value": 90,
+      "comparison": "ST",
+      "true_number": 8,
+      "false_number": 24
+    },
+    {
+      "number": 5,
+      "display_name": "PQR",
+      "description": "",
+      "data_type_id": "PQR",
+      "data_value": 1,
+      "comparison": "EQ",
+      "true_number": 7,
+      "false_number": 6
+    },
+    {
+      "number": 4,
+      "display_name": "DEF nach Angabe",
+      "description": "",
+      "data_type_id": "DEF",
+      "data_value": 1,
+      "comparison": "EQ",
+      "true_number": 5,
+      "false_number": 23
+    },
+    {
+      "number": 3,
+      "display_name": "MNO > 65",
+      "description": "",
+      "data_type_id": "MNO",
+      "data_value": 65,
+      "comparison": "GT",
+      "true_number": 22,
+      "false_number": 4
+    },
+    {
+      "number": 2,
+      "display_name": "ABC < 200.000",
+      "description": "",
+      "data_type_id": "ABC",
+      "data_value": 200000,
+      "comparison": "ST",
+      "list_comparison": "ALL",
+      "true_number": 3,
+      "false_number": 21
+    }
+  ],
+  "leafs": [
+    {
+      "number": 20,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 21,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 22,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 28,
+      "display_name": "extrem negativ",
+      "result": false
+    },
+    {
+      "number": 38,
+      "display_name": "positiv",
+      "result": true
+    },
+    {
+      "number": 37,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 36,
+      "display_name": "positiv",
+      "result": true
+    },
+    {
+      "number": 35,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 34,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 30,
+      "display_name": "positiv",
+      "result": true
+    },
+    {
+      "number": 29,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 33,
+      "display_name": "positiv",
+      "result": true
+    },
+    {
+      "number": 32,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 31,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 25,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 50,
+      "display_name": "extrem negativ",
+      "result": false
+    },
+    {
+      "number": 60,
+      "display_name": "positiv",
+      "result": true
+    },
+    {
+      "number": 59,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 58,
+      "display_name": "positiv",
+      "result": true
+    },
+    {
+      "number": 57,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 56,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 52,
+      "display_name": "positiv",
+      "result": true
+    },
+    {
+      "number": 51,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 55,
+      "display_name": "positiv",
+      "result": true
+    },
+    {
+      "number": 54,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 53,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 27,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 26,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 24,
+      "display_name": "negativ",
+      "result": false
+    },
+    {
+      "number": 23,
+      "display_name": "negativ",
+      "result": false
+    }
+  ]
+}

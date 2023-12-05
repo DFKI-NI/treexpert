@@ -1,0 +1,1701 @@
+{
+  "1-1.0_L.20": {
+    "decision": {
+      "identifier": "test_entity",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.20",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          750000,
+          1048672,
+          1345678
+        ],
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "2-1.0_L.21": {
+    "decision": {
+      "identifier": "test_entity2",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.21",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          250000,
+          345178,
+          783412
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          250000,
+          345178,
+          783412
+        ],
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "3-1.0_L.22": {
+    "decision": {
+      "identifier": "test_entity3",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.22",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 90,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "4-1.0_L.23": {
+    "decision": {
+      "identifier": "test_entity4",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.23",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": 0,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "5-1.0_L.28": {
+    "decision": {
+      "identifier": "test_entity5",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "extrem negativ",
+      "result": false,
+      "leaf_id": "1.0_L.28",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 267543,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "6-1.0_L.24": {
+    "decision": {
+      "identifier": "test_entity6",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.24",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.7"
+      },
+      {
+        "id": "1.0_N.7",
+        "input_value": 91,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "7-1.0_L.30": {
+    "decision": {
+      "identifier": "test_entity7",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "positiv",
+      "result": true,
+      "leaf_id": "1.0_L.30",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.12"
+      },
+      {
+        "id": "1.0_N.12",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.14"
+      },
+      {
+        "id": "1.0_N.14",
+        "input_value": false,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "8-1.0_L.29": {
+    "decision": {
+      "identifier": "test_entity8",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.29",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.12"
+      },
+      {
+        "id": "1.0_N.12",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.14"
+      },
+      {
+        "id": "1.0_N.14",
+        "input_value": true,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "9-1.0_L.38": {
+    "decision": {
+      "identifier": "test_entity9",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "positiv",
+      "result": true,
+      "leaf_id": "1.0_L.38",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 121345,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 121345,
+        "result": true,
+        "based_on": "1.0_N.13"
+      },
+      {
+        "id": "1.0_N.13",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.17"
+      },
+      {
+        "id": "1.0_N.17",
+        "input_value": false,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "10-1.0_L.37": {
+    "decision": {
+      "identifier": "test_entity10",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.37",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 121345,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 121345,
+        "result": true,
+        "based_on": "1.0_N.13"
+      },
+      {
+        "id": "1.0_N.13",
+        "input_value": [
+          12345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.17"
+      },
+      {
+        "id": "1.0_N.17",
+        "input_value": true,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "11-1.0_L.31": {
+    "decision": {
+      "identifier": "test_entity11",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.31",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.12"
+      },
+      {
+        "id": "1.0_N.12",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": false,
+        "based_on": "1.0_N.15"
+      },
+      {
+        "id": "1.0_N.15",
+        "input_value": true,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "12-1.0_L.33": {
+    "decision": {
+      "identifier": "test_entity12",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "positiv",
+      "result": true,
+      "leaf_id": "1.0_L.33",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.12"
+      },
+      {
+        "id": "1.0_N.12",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": false,
+        "based_on": "1.0_N.15"
+      },
+      {
+        "id": "1.0_N.15",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.16"
+      },
+      {
+        "id": "1.0_N.16",
+        "input_value": false,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "13-1.0_L.32": {
+    "decision": {
+      "identifier": "test_entity13",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.32",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 213456,
+        "result": false,
+        "based_on": "1.0_N.12"
+      },
+      {
+        "id": "1.0_N.12",
+        "input_value": [
+          12345,
+          23456,
+          55678
+        ],
+        "result": false,
+        "based_on": "1.0_N.15"
+      },
+      {
+        "id": "1.0_N.15",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.16"
+      },
+      {
+        "id": "1.0_N.16",
+        "input_value": true,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "14-1.0_L.34": {
+    "decision": {
+      "identifier": "test_entity14",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.34",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 121345,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 121345,
+        "result": true,
+        "based_on": "1.0_N.13"
+      },
+      {
+        "id": "1.0_N.13",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.18"
+      },
+      {
+        "id": "1.0_N.18",
+        "input_value": true,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "15-1.0_L.36": {
+    "decision": {
+      "identifier": "test_entity15",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "positiv",
+      "result": true,
+      "leaf_id": "1.0_L.36",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 121345,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 121345,
+        "result": true,
+        "based_on": "1.0_N.13"
+      },
+      {
+        "id": "1.0_N.13",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.18"
+      },
+      {
+        "id": "1.0_N.18",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.19"
+      },
+      {
+        "id": "1.0_N.19",
+        "input_value": false,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "16-1.0_L.35": {
+    "decision": {
+      "identifier": "test_entity16",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.35",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": false,
+        "result": false,
+        "based_on": "1.0_N.6"
+      },
+      {
+        "id": "1.0_N.6",
+        "input_value": 121345,
+        "result": false,
+        "based_on": "1.0_N.11"
+      },
+      {
+        "id": "1.0_N.11",
+        "input_value": 121345,
+        "result": true,
+        "based_on": "1.0_N.13"
+      },
+      {
+        "id": "1.0_N.13",
+        "input_value": [
+          112345,
+          23456,
+          45678
+        ],
+        "result": false,
+        "based_on": "1.0_N.18"
+      },
+      {
+        "id": "1.0_N.18",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.19"
+      },
+      {
+        "id": "1.0_N.19",
+        "input_value": true,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "17-1.0_L.25": {
+    "decision": {
+      "identifier": "test_entity17",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.25",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.7"
+      },
+      {
+        "id": "1.0_N.7",
+        "input_value": 77,
+        "result": true,
+        "based_on": "1.0_N.8"
+      },
+      {
+        "id": "1.0_N.8",
+        "input_value": [
+          125678,
+          145621,
+          190045
+        ],
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "18-1.0_L.26": {
+    "decision": {
+      "identifier": "test_entity18",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.26",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.7"
+      },
+      {
+        "id": "1.0_N.7",
+        "input_value": 77,
+        "result": true,
+        "based_on": "1.0_N.8"
+      },
+      {
+        "id": "1.0_N.8",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.9"
+      },
+      {
+        "id": "1.0_N.9",
+        "input_value": true,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "19-1.0_L.27": {
+    "decision": {
+      "identifier": "test_entity19",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "negativ",
+      "result": false,
+      "leaf_id": "1.0_L.27",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.7"
+      },
+      {
+        "id": "1.0_N.7",
+        "input_value": 77,
+        "result": true,
+        "based_on": "1.0_N.8"
+      },
+      {
+        "id": "1.0_N.8",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.9"
+      },
+      {
+        "id": "1.0_N.9",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.10"
+      },
+      {
+        "id": "1.0_N.10",
+        "input_value": true,
+        "result": false,
+        "based_on": ""
+      }
+    ]
+  },
+  "20-1.0_L.50": {
+    "decision": {
+      "identifier": "test_entity20",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "extrem negativ",
+      "result": false,
+      "leaf_id": "1.0_L.50",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.7"
+      },
+      {
+        "id": "1.0_N.7",
+        "input_value": 77,
+        "result": true,
+        "based_on": "1.0_N.8"
+      },
+      {
+        "id": "1.0_N.8",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.9"
+      },
+      {
+        "id": "1.0_N.9",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.10"
+      },
+      {
+        "id": "1.0_N.10",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.40"
+      },
+      {
+        "id": "1.0_N.40",
+        "input_value": 345678,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "22-1.0_L.52": {
+    "decision": {
+      "identifier": "test_entity22",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "positiv",
+      "result": true,
+      "leaf_id": "1.0_L.52",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          25678,
+          45621,
+          40045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          25678,
+          45621,
+          40045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.7"
+      },
+      {
+        "id": "1.0_N.7",
+        "input_value": 77,
+        "result": true,
+        "based_on": "1.0_N.8"
+      },
+      {
+        "id": "1.0_N.8",
+        "input_value": [
+          25678,
+          45621,
+          40045
+        ],
+        "result": true,
+        "based_on": "1.0_N.9"
+      },
+      {
+        "id": "1.0_N.9",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.10"
+      },
+      {
+        "id": "1.0_N.10",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.40"
+      },
+      {
+        "id": "1.0_N.40",
+        "input_value": 234567,
+        "result": false,
+        "based_on": "1.0_N.41"
+      },
+      {
+        "id": "1.0_N.41",
+        "input_value": 234567,
+        "result": false,
+        "based_on": "1.0_N.42"
+      },
+      {
+        "id": "1.0_N.42",
+        "input_value": [
+          25678,
+          45621,
+          40045
+        ],
+        "result": true,
+        "based_on": "1.0_N.44"
+      },
+      {
+        "id": "1.0_N.44",
+        "input_value": 0,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "25-1.0_L.55": {
+    "decision": {
+      "identifier": "test_entity25",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "positiv",
+      "result": true,
+      "leaf_id": "1.0_L.55",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.7"
+      },
+      {
+        "id": "1.0_N.7",
+        "input_value": 77,
+        "result": true,
+        "based_on": "1.0_N.8"
+      },
+      {
+        "id": "1.0_N.8",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.9"
+      },
+      {
+        "id": "1.0_N.9",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.10"
+      },
+      {
+        "id": "1.0_N.10",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.40"
+      },
+      {
+        "id": "1.0_N.40",
+        "input_value": 234567,
+        "result": false,
+        "based_on": "1.0_N.41"
+      },
+      {
+        "id": "1.0_N.41",
+        "input_value": 234567,
+        "result": false,
+        "based_on": "1.0_N.42"
+      },
+      {
+        "id": "1.0_N.42",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": false,
+        "based_on": "1.0_N.45"
+      },
+      {
+        "id": "1.0_N.45",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.46"
+      },
+      {
+        "id": "1.0_N.46",
+        "input_value": false,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  },
+  "30-1.0_L.60": {
+    "decision": {
+      "identifier": "test_entity30",
+      "sec_identifier": "test_entity_info",
+      "is_preliminary": false,
+      "description": "positiv",
+      "result": true,
+      "leaf_id": "1.0_L.60",
+      "version": "Testbaum: 1.0"
+    },
+    "criteria": [
+      {
+        "id": "1.0_N.1",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": false,
+        "based_on": "1.0_N.2"
+      },
+      {
+        "id": "1.0_N.2",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.3"
+      },
+      {
+        "id": "1.0_N.3",
+        "input_value": 60,
+        "result": false,
+        "based_on": "1.0_N.4"
+      },
+      {
+        "id": "1.0_N.4",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.5"
+      },
+      {
+        "id": "1.0_N.5",
+        "input_value": true,
+        "result": true,
+        "based_on": "1.0_N.7"
+      },
+      {
+        "id": "1.0_N.7",
+        "input_value": 77,
+        "result": true,
+        "based_on": "1.0_N.8"
+      },
+      {
+        "id": "1.0_N.8",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.9"
+      },
+      {
+        "id": "1.0_N.9",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.10"
+      },
+      {
+        "id": "1.0_N.10",
+        "input_value": false,
+        "result": true,
+        "based_on": "1.0_N.40"
+      },
+      {
+        "id": "1.0_N.40",
+        "input_value": 134567,
+        "result": false,
+        "based_on": "1.0_N.41"
+      },
+      {
+        "id": "1.0_N.41",
+        "input_value": 134567,
+        "result": true,
+        "based_on": "1.0_N.43"
+      },
+      {
+        "id": "1.0_N.43",
+        "input_value": [
+          25678,
+          45621,
+          90045
+        ],
+        "result": true,
+        "based_on": "1.0_N.47"
+      },
+      {
+        "id": "1.0_N.47",
+        "input_value": false,
+        "result": true,
+        "based_on": ""
+      }
+    ]
+  }
+}

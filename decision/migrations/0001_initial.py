@@ -76,8 +76,9 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("result", models.CharField(max_length=200)),
+                ("description", models.CharField(max_length=200)),
                 ("is_preliminary", models.BooleanField()),
+                ("result", models.BooleanField(blank=True, null=True)),
                 (
                     "end_leaf",
                     models.ForeignKey(

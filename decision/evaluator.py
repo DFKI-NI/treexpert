@@ -62,32 +62,11 @@ class FullCriteria:
         self.input_value = input
 
 
-def get_identifier_by_id(id: str, successor_type) -> str:
-    if successor_type is TreeNode:
-        return "n" + str(id)
-    if successor_type is TreeLeaf:
-        return "l" + str(id)
-    # necessary because of the generic connection between the elements of the tree
-    if isinstance(successor_type, ContentType):
-        if successor_type.id == ContentType.objects.get(model="treeleaf").id:
-            return get_identifier_by_id(id, TreeLeaf)
-        if successor_type.id == ContentType.objects.get(model="treenode").id:
-            return get_identifier_by_id(id, TreeNode)
-    raise EvaluatorException("error parsing tree elements, neither a node nor a leaf")
-
-
-def get_identifier_by_element(element: Union[TreeNode, TreeLeaf]) -> str:
-    return get_identifier_by_id(element.id, type(element))
-
-
-def add_list_to_dict(mylist: list, mydict: dict) -> dict:
+def add_list_to_dict(mylist: List[Union[TreeNode, TreeLeaf]], mydict: dict) -> dict:
     for element in mylist:
-        identifier = get_identifier_by_element(element)
-        if mydict.get(identifier) is not None:
-            raise EvaluatorException(
-                "error parsing current tree, identifier is not unique"
-            )
-        mydict[identifier] = element
+        if mydict.get(element.id) is not None:
+            raise EvaluatorException("error parsing current tree, duplicate elements")
+        mydict[element.id] = element
     return mydict
 
 
@@ -100,7 +79,7 @@ class Evaluator:
     node_missing_sth: TreeNode = None
 
     def __init__(self, tree: Tree, nodes: List[TreeNode], leafs: List[TreeLeaf]):
-        self.root = get_identifier_by_element(tree.root)
+        self.root = tree.root.id
         tree_dict = dict()
         tree_dict = add_list_to_dict(list(nodes) + list(leafs), tree_dict)
         self.tree_dict = tree_dict
@@ -177,17 +156,9 @@ class Evaluator:
                 )
                 # determine next node or leaf
                 if evaluation:
-                    current_node = self.tree_dict[
-                        get_identifier_by_id(
-                            current_node.true_id, current_node.true_type
-                        )
-                    ]
+                    current_node = self.tree_dict[current_node.true_id]
                 else:
-                    current_node = self.tree_dict[
-                        get_identifier_by_id(
-                            current_node.false_id, current_node.false_type
-                        )
-                    ]
+                    current_node = self.tree_dict[current_node.false_id]
 
         # concluding with the result
         if self.missing_data is None:

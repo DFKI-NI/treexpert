@@ -1,5 +1,6 @@
 from ninja import NinjaAPI
 from core.api import router as core_router
+from decision.api import router as decision_router
 from tree.api import router as tree_router
 
 api = NinjaAPI(
@@ -9,3 +10,4 @@ api = NinjaAPI(
 
 api.add_router("/core/", core_router)
 api.add_router("/tree/", tree_router)
+api.add_router("/decision/", decision_router)

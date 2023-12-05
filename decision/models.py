@@ -29,7 +29,10 @@ class RequestData(models.Model):
 
 class Decision(models.Model):
     request = models.OneToOneField(ExpertRequest, on_delete=models.CASCADE)
-    result = models.CharField(max_length=200)  # result of end leaf or missing data text
+    description = models.CharField(
+        max_length=200
+    )  # result of end leaf or missing data text
+    result = models.BooleanField(null=True)
     end_leaf = models.ForeignKey(
         TreeLeaf, on_delete=models.RESTRICT, blank=True, null=True
     )

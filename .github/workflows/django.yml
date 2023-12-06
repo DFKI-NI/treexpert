@@ -7,7 +7,7 @@ on:
     branches: ["main"]
 
 jobs:
-  test:
+  test-and-lint:
     runs-on: ubuntu-latest
 
     services:
@@ -43,6 +43,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Use black to check linting
+        run: |
+          black . --check
 
       - name: Migrate
         run: |

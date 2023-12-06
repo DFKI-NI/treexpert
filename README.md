@@ -15,8 +15,9 @@ Expert System Decision API developed with django and django-ninja
 
 ## Prerequisites
 
-- Python 3 according to [Django](https://djangoproject.com) requirements
-- PostgreSQL
+- Python 3 according to [Django](https://djangoproject.com) requirements (tested with version 3.8.10s) including pip and virtualenv
+- [PostgreSQL](https://www.postgresql.org/) (tested with version 14.8)
+- [virtualenv](https://virtualenv.pypa.io/en/latest/index.html)
 
 ## How to install and start the API
 
@@ -62,6 +63,20 @@ pipeline. To do this locally run the following commands from the project root:
 
 Now you should see a folder named `htmlcov`, open the `index.html` in there in
 your browser and explore the files that you would like to see the coverage for.
+
+### Dropping all tables
+
+Sometimes during development dropping all tables in your database is required
+or useful. To do this use the commands below. Be careful not to drop something
+you still need!
+
+```SQL
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+```
+
+Afterwards be sure to apply migrations (step 6 above) and optionally also load
+data from seed (`python manage.py loaddata {/path/to/seed/file}`).
 
 ## Your first tree
 

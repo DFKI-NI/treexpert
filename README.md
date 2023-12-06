@@ -42,6 +42,23 @@ With the standard settings used above, the API can be explored at
 See **Your first tree** below for a detailed explanation about the different
 components of the software.
 
+## Usage with Docker
+
+**Prerequisites**: Docker
+
+### Building the image yourself
+
+1. clone this repo
+2. move into the root of the project: `cd treexpert` (in this folder the
+   `manage.py` should be found)
+3. run `docker-compose up` which will build the treexpert and pull the latest
+   postgres Docker image, add a `-d` to your command if you don't want to see
+   further output from the servers
+4. visit `localhost:8000` (just as above) to see the API documentation
+
+To stop the treexpert again, press Ctrl+C or run `docker-compose down` if
+you've used the `-d` option.
+
 ## Development
 
 ### Linter

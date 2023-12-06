@@ -41,4 +41,6 @@ jobs:
 
       - name: Run Tests
         run: |
-          python manage.py test
+          coverage run --source='.' manage.py test --settings settings.ci
+          coverage report
+          coverage xml

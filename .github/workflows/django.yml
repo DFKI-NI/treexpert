@@ -41,6 +41,6 @@ jobs:
 
       - name: Run Tests
         run: |
-          coverage run --source='.' manage.py test --settings settings.ci
+          coverage run --source='.' manage.py test --settings treexpert.settings.ci
           coverage report
           coverage xml

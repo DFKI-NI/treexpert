@@ -124,6 +124,34 @@ id using the endpoint `/api/tree/kind/all`.
 Your tree needs to be a complete binary tree meaning that all nodes have
 exactly two children. If you don't provide a complete tree it will be rejected
 by the treexpert API.
+While adding your tree to the treexpert at `/api/tree/new/{kind_id}` all
+elements (nodes and leafs) need a unique `number`. This number then is used to
+reference the connections between the elements. Here you can see an example of
+a small tree. Pay attention that you don't give the same number to a node and
+a leaf!
+
+```
+           1  <- root
+          / \
+node ->  2   3  <- leaf
+        / \
+       4   5  <- leaves
+```
+
+To then connect the tree properly, use these numbers for the `root` property of
+your tree (in this case `1`) and the `true_number` and `false_number`
+properties of your nodes. The root of our example above would look like this:
+
+```json
+{
+  "number": 1,
+  "display_name": "Test Root",
+  "description": "This is our root for the testing tree.",
+  "comparison": "GT", // options are: GT = greater than, ST = smaller than, EQ = equal, NE = not equal
+  "true_number": 2,
+  "false_number": 3,
+}
+```
 
 ### Tree Versioning
 

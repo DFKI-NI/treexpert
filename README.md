@@ -59,6 +59,32 @@ components of the software.
 To stop the treexpert again, press Ctrl+C or run `docker-compose down` if
 you've used the `-d` option.
 
+### Using a pre-built Docker image
+
+1. load your image into Docker: `docker load < treexpert.tar.gz`
+2. use the `docker-compose.yml` here and replace the `web: build:` part with:
+   `image: treexpert:latest` and remove the part `web: volumes:`
+3. start your treexpert and database with `docker-compose up`
+4. visit `localhost:8000` (just as above) to see the API documentation
+
+### Automatically load data from seed when using Docker
+
+1. add a folder to the root of the project called `seed`
+2. add your seed files into this directory
+3. add the following code to the `entrypoint.sh` file after the migration:
+
+```bash
+echo "Load data from seed"
+
+while ! python manage.py loaddata seed/ 2>&1; do
+  echo "Data load is in progress"
+  sleep 3
+done
+```
+
+4. build your treexpert docker image with: `docker build -t treexpert:latest .`
+5. start your treexpert again like above
+
 ## Development
 
 ### Linter

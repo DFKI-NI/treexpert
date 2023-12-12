@@ -5,7 +5,8 @@ Expert System Decision API developed with django and django-ninja
 **Key Features**:
 
 - **save** different kinds of binary decision trees with versioning and
-  explanations for each step (also see treeditor)
+  explanations for each step (also see
+  [treeditor](https://github.com/DFKI-NI/treeditor))
 - **run** one of your saved trees for an entity with the given information
 - **receive** the detailed path taken through the tree with the provided
   information

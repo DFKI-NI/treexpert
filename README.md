@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 # treexpert
 
 Expert System Decision API developed with django and django-ninja
@@ -6,23 +8,28 @@ Expert System Decision API developed with django and django-ninja
 
 - **save** different kinds of binary decision trees with versioning and
   explanations for each step (also see
-  [treeditor](https://github.com/DFKI-NI/treeditor))
+  [treeditor][treeditor-url])
 - **run** one of your saved trees for an entity with the given information
 - **receive** the detailed path taken through the tree with the provided
   information
 - **explain** this path with the information embedded into your decision tree
 
-**Maintainer**: [Paula Kammler](mailto:paula@kammler.co)
+## Getting started
 
-## Prerequisites
+### Prerequisites
 
-- Python 3 according to [Django](https://djangoproject.com) requirements (tested with version 3.8.10s) including pip and virtualenv
+- Python 3 according to [Django](https://djangoproject.com) requirements
+  including pip and [virtualenv][virtualenv-url]:
+  ```bash
+  python3 --version // tested with 3.8.10
+  pip3 --version
+  python3 -m venv -h // outputs virtualenv help page
+  ```
 - [PostgreSQL](https://www.postgresql.org/) (tested with version 14.8)
-- [virtualenv](https://virtualenv.pypa.io/en/latest/index.html)
 
-## How to install and start the API
+### How to install and start the API
 
-1. clone this repo
+1. clone this repo: `git clone https://github.com/DFKI-NI/treexpert.git`
 2. move into the root of the project: `cd treexpert` (in this folder the
    `manage.py` should be found)
 3. create a virtual environment: `python3 -m venv env`
@@ -49,7 +56,7 @@ components of the software.
 
 ### Building the image yourself
 
-1. clone this repo
+1. clone this repo: `git clone https://github.com/DFKI-NI/treexpert.git`
 2. move into the root of the project: `cd treexpert` (in this folder the
    `manage.py` should be found)
 3. run `docker-compose up` which will build the treexpert and pull the latest
@@ -59,6 +66,10 @@ components of the software.
 
 To stop the treexpert again, press Ctrl+C or run `docker-compose down` if
 you've used the `-d` option.
+
+If you just want to build your own treexpert image without directly running it,
+you can use `docker build -t treexpert:latest .` to build according to the
+provided Dockerfile.
 
 ### Using a pre-built Docker image
 
@@ -72,17 +83,16 @@ you've used the `-d` option.
 
 1. add a folder to the root of the project called `seed`
 2. add your seed files into this directory
-3. add the following code to the `entrypoint.sh` file after the migration:
+3. add the following code to the `docker-entrypoint.sh` file after the
+   migration:
+  ```bash
+  echo "Load data from seed"
 
-```bash
-echo "Load data from seed"
-
-while ! python manage.py loaddata seed/ 2>&1; do
-  echo "Data load is in progress"
-  sleep 3
-done
-```
-
+  while ! python manage.py loaddata seed/ 2>&1; do
+    echo "Data load is in progress"
+    sleep 3
+  done
+  ```
 4. build your treexpert docker image with: `docker build -t treexpert:latest .`
 5. start your treexpert again like above
 
@@ -130,32 +140,32 @@ evaluate it. The `core` app that contains the data types that are used in the
 uses both to evaluate the tree with given information about an entity.
 
 Before creating a new tree (either by sending a request through the OpenAPI
-interface or with the `treeditor`) you need data types that are then used in
-the nodes of the tree to specify what kind of data is compared to the given
+interface or with the `treeditor`) you need **data types** that are then used
+in the nodes of the tree to specify what kind of data is compared to the given
 information. Use the endpoint `/api/core/datatype/new` to create a new data
 type for your tree. For example, if you are creating a tree that answers the
 question "Is this a good YouTube video?", a data type for this tree could be
 the length of the video (INT as `kind_of_data`) or if the video contains
 controversial information (BOOL as `kind_of_data`). If you have a data dump
 from a previous instance of this API, you can also use the `loaddata` command
-from Django. More information about this, can be found [here](https://docs.djangoproject.com/en/4.2/ref/django-admin/#dumpdata)
-and [here](https://docs.djangoproject.com/en/4.2/ref/django-admin/#loaddata).
+from Django. More information about this, can be found [here][dumpdata-url]
+and [here][loaddata-url].
 
 With your data types ready (check using `/api/core/datatype/all`), you can now
-create your tree. If this is the first tree of its kind, create a new tree kind
-using the `/api/tree/kind/new`. The `id` of your tree kind you receive as a
-response can now be used to feed your new tree to the API at the endpoint
+create your tree. If this is the first tree of its kind, create a new **tree
+kind** using the `/api/tree/kind/new`. The `id` of your tree kind you receive
+as a response can now be used to feed your new tree to the API at the endpoint
 `/api/tree/new/{kind_id}`. If you didn't create a new kind, find your tree kind
 id using the endpoint `/api/tree/kind/all`.
 
-Your tree needs to be a complete binary tree meaning that all nodes have
+Your tree needs to be a **complete, binary tree** meaning that all nodes have
 exactly two children. If you don't provide a complete tree it will be rejected
 by the treexpert API.
 While adding your tree to the treexpert at `/api/tree/new/{kind_id}` all
-elements (nodes and leafs) need a unique `number`. This number then is used to
+elements (nodes and leaves) need a unique `number`. This number then is used to
 reference the connections between the elements. Here you can see an example of
-a small tree. Pay attention that you don't give the same number to a node and
-a leaf!
+a small tree. Pay attention that you **don't give the same number to a node and
+a leaf**!
 
 ```
            1  <- root
@@ -167,18 +177,44 @@ node ->  2   3  <- leaf
 
 To then connect the tree properly, use these numbers for the `root` property of
 your tree (in this case `1`) and the `true_number` and `false_number`
-properties of your nodes. The root of our example above would look like this:
+properties of your nodes. The root node of our example above would look like
+this:
 
 ```json
 {
   "number": 1,
   "display_name": "Test Root",
   "description": "This is our root for the testing tree.",
-  "comparison": "GT", // options are: GT = greater than, ST = smaller than, EQ = equal, NE = not equal
+  "data_value": 42,
+  "comparison": "GT",
+  "list_comparison": "ALL",
   "true_number": 2,
-  "false_number": 3,
+  "false_number": 3
 }
 ```
+
+The comparison of a node can be one of these four different kinds:
+* `GT` = greater than: your input should be greater than the provided value in
+  `data_value` of this node
+* `ST` = smaller than: your input should be smaller than the provided value in
+  `data_value` of this node
+* `EQ` = equal: your input should be the same as the value in `data_value` of
+  this node
+* `NE` = not equal: your input should not be the same as the value in
+  `data_value` of this node
+
+When running your tree, you can also provide a list of values to be compared in
+a node. To specify if all of these provided values need to render `true` in the
+comparison you can provide a `list_comparison` method. This can be:
+* `ALL` = all values need to render `true` for the whole node to be `true`
+* `ONE` = one or more values need to render `true`
+* `TWO` = two or more values need to render `true`
+
+For example, if the entity you're putting into the tree has `[43, 51, 40]` as
+the input for the root node above, the result of this node would be `false`.
+`43` and `51` meet the criterion to be `GT` the `data_value: 42`, but `40`
+doesn't. If the node's `list_comparison` method would be `ONE` or `TWO`, the
+result for this input would be `true`.
 
 ### Tree Versioning
 
@@ -271,3 +307,30 @@ criteria list provides you with all the information necessary to reconstruct
 the path through the decision tree. If you use `{fullresult}` set to true for
 this endpoint, you will see much more of the information from the tree that has
 been omitted here for clarity.
+
+## License
+
+Distributed under the BSD-2 License. See `LICENSE` file for more information.
+
+## Contact
+
+Paula Kammler - [@codingpaula](https://github.com/codingpaula) -
+[paula@kammler.co](mailto:paula@kammler.co)
+
+## Förderhinweis
+
+Gefördert im Rahmen des Forschungsprojekts "IQexpert" durch das BMEL -
+Bundesministerium für Ernährung und Landwirtschaft.
+
+FKZ: 281C202B19
+
+Mehr Informationen hier auf der [Website des dfki][dfki-website].
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS -->
+[dumpdata-url]: https://docs.djangoproject.com/en/4.2/ref/django-admin/#dumpdata
+[loaddata-url]: https://docs.djangoproject.com/en/4.2/ref/django-admin/#loaddata
+[dfki-website]: https://www.dfki.de/web/forschung/projekte-publikationen/projekt/iqexpert
+[treeditor-url]: https://github.com/DFKI-NI/treeditor
+[virtualenv-url]: https://virtualenv.pypa.io/en/latest/index.html
